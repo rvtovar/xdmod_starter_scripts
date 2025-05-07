@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 echo "Running the code grabbing"
 
 rm -rf ~/Work/code_coverage/code_coverage

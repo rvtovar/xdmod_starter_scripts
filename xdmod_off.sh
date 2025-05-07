@@ -1,5 +1,4 @@
-!#/bin/bash
-
+#!/bin/bash
 dockerPath=~/Work/xdmod/tests/playwright/Docker/docker-compose.yml
 
 GREEN='\033[0;32m'

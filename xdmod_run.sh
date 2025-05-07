@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 projectPath=~/Work/xdmod/
 dockerPath=${projectPath}/tests/playwright/Docker/docker-compose.yml
@@ -44,4 +44,6 @@ docker exec -e XDMOD_TEST_MODE=$install_type xdmod /root/xdmod/tests/ci/bootstra
 
 echo "${GREEN} Creating database user ${NC}"
 docker exec -it xdmod mysql -e "CREATE USER 'xdmod'@'192.168.65.1' IDENTIFIED BY 'xdmod123'; GRANT ALL PRIVILEGES ON *.* TO 'xdmod'@'192.168.65.1' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+
+echo "${BLUE} Database User created ^_^ ${NC}"
 exit 0
